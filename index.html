@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SZR Trščar Temerin - Trščani krovovi sa 20+ godina iskustva. Montaža, prepravka i održavanje. Pokrivamo celu Srbiju. Pozovite 063/8373-120">
+    <meta name="keywords" content="trščani krovovi, krov od trske, etno krov, salaš krov, Temerin, Vojvodina, Srbija">
+    <meta name="author" content="SZR Trščar">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SZR Trščar - Trščani krovovi | Temerin">
+    <meta property="og:description" content="Tradicionalni trščani krovovi sa 20+ godina iskustva. Pokrivamo celu Srbiju.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
+    
+    <title>SZR Trščar - Trščani krovovi | Temerin | 20+ godina iskustva</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --primary: #8B7355;
+            --primary-dark: #6B5344;
+            --primary-light: #D4C4A8;
+            --accent: #4A7C59;
+            --accent-light: #7BA05B;
+            --secondary: #2D2A26;
+            --text: #3D3A36;
+            --text-light: #6B6560;
+            --white: #FFFFFF;
+            --cream: #FAF7F2;
+            --gray-100: #F5F0E6;
+            --gray-200: #E8E2D9;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--white);
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            color: var(--secondary);
+            line-height: 1.3;
+        }
+
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.4rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            h3 { font-size: 1.2rem; }
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(139, 115, 85, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        .btn-accent {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        .btn-accent:hover {
+            background: #3d6a4a;
+            transform: translateY(-3px);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            z-index: 1000;
+            padding: 12px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .phone-btn {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+
+        .phone-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 3px 0;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 30px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                gap: 20px;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .header-cta .phone-btn span {
+                display: none;
+            }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(45,42,38,0.85) 0%, rgba(107,83,68,0.75) 100%),
+                        url('images/stock_thatched_01.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+            max-width: 700px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .hero-badge i {
+            color: var(--accent-light);
+            margin-right: 8px;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: var(--primary-light);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.1);
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .trust-badge i {
+            color: var(--accent-light);
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                background-attachment: scroll;
+                padding: 120px 0 80px;
+            }
+            
+            .trust-badges {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+
+        /* ===== SECTION STYLES ===== */
+        section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header .label {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 15px auto 0;
+            font-size: 1.1rem;
+        }
+
+        /* ===== SERVICES ===== */
+        .services {
+            background: var(--gray-100);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all 0.4s;
+        }
+
+        .service-card:hover .service-icon {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        }
+
+        .service-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+            transition: color 0.4s;
+        }
+
+        .service-card:hover .service-icon i {
+            color: var(--white);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* ===== WHY US ===== */
+        .why-us {
+            background: var(--white);
+        }
+
+        .why-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-image {
+            position: relative;
+        }
+
+        .why-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .why-image .experience-badge {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 25px 35px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(139, 115, 85, 0.4);
+        }
+
+        .experience-badge .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .experience-badge .text {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .why-item {
+            padding: 25px;
+            background: var(--gray-100);
+            border-radius: 16px;
+            transition: all 0.3s;
+        }
+
+        .why-item:hover {
+            background: var(--white);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            transform: translateY(-5px);
+        }
+
+        .why-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .why-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .why-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 992px) {
+            .why-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .why-image .experience-badge {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery {
+            background: var(--secondary);
+            padding: 100px 0;
+        }
+
+        .gallery .section-header h2,
+        .gallery .section-header .label {
+            color: var(--white);
+        }
+
+        .gallery .section-header p {
+            color: var(--gray-200);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+
+        .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(45,42,38,0.8) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay span {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gallery-item:first-child {
+                grid-column: span 2;
+                grid-row: span 1;
+                aspect-ratio: 16/9;
+            }
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--gray-100) 100%);
+        }
+
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            display: none;
+            position: relative;
+        }
+
+        .testimonial-card.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .testimonial-card .quote-icon {
+            font-size: 3rem;
+            color: var(--primary-light);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card .stars {
+            color: #FFC107;
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+        }
+
+        .testimonial-card p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: var(--text);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .author-info .name {
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .author-info .location {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gray-200);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .slider-dot.active {
+            background: var(--primary);
+            transform: scale(1.2);
+        }
+
+        /* ===== ABOUT ===== */
+        .about {
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+        }
+
+        .about-image .certified-badge {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(74, 124, 89, 0.4);
+        }
+
+        .certified-badge i {
+            font-size: 2rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .certified-badge span {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .about-text .label {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .about-text h2 {
+            margin-bottom: 25px;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .about-image .certified-badge {
+                top: 20px;
+                left: 20px;
+            }
+            
+            .about-stats {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-stats {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+        /* ===== CONTACT ===== */
+        .contact {
+            background: var(--gray-100);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-form-wrapper {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+        }
+
+        .contact-form-wrapper h3 {
+            margin-bottom: 10px;
+        }
+
+        .contact-form-wrapper .subtitle {
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--secondary);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid var(--gray-200);
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s;
+            background: var(--white);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(139, 115, 85, 0.1);
+        }
+
+        .contact-form textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.05rem;
+        }
+
+        .contact-info-wrapper h3 {
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: var(--white);
+            border-radius: 16px;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .contact-item-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--primary-light), var(--gray-100));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-item-icon i {
+            font-size: 1.4rem;
+            color: var(--primary);
+        }
+
+        .contact-item h4 {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+        }
+
+        @media (max-width: 992px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form-wrapper {
+                padding: 35px;
+            }
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .footer-section h4 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .footer-about p {
+            color: var(--gray-200);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: all 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section ul a {
+            color: var(--gray-200);
+            text-decoration: none;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-section ul a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .footer-contact p {
+            color: var(--gray-200);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-contact i {
+            color: var(--primary);
+            width: 20px;
+        }
+
+        .footer-contact a {
+            color: var(--gray-200);
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--gray-200);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        /* ===== FLOATING BUTTONS ===== */
+        .viber-float {
+            position: fixed;
+            bottom: 110px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #7360F2, #9b89f5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+            box-shadow: 0 8px 25px rgba(115, 96, 242, 0.4);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .viber-float:hover {
+            transform: scale(1.1) translateY(-3px);
+            box-shadow: 0 12px 35px rgba(115, 96, 242, 0.5);
+        }
+
+        .call-float {
+            position: fixed;
+            bottom: 35px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            box-shadow: 0 8px 25px rgba(139, 115, 85, 0.4);
+            z-index: 999;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(139, 115, 85, 0.5); }
+            70% { box-shadow: 0 0 0 20px rgba(139, 115, 85, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(139, 115, 85, 0); }
+        }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            cursor: pointer;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2.5rem;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .lightbox-close:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ===== SCROLL ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .btn {
+            background: var(--white);
+            color: var(--primary);
+            font-size: 1.1rem;
+            padding: 18px 40px;
+        }
+
+        .cta-section .btn:hover {
+            background: var(--cream);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="logo-text">SZR <span>Trščar</span></div>
+                </a>
+                
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#pocetna">Početna</a></li>
+                        <li><a href="#usluge">Usluge</a></li>
+                        <li><a href="#zasto-mi">Zašto mi</a></li>
+                        <li><a href="#galerija">Galerija</a></li>
+                        <li><a href="#o-nama">O nama</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:+381638373120" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>063/8373-120</span>
+                    </a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="pocetna">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-leaf"></i>
+                    100% prirodan materijal
+                </div>
+                <h1>Trščani krovovi koji traju <span>generacijama</span></h1>
+                <p>Od 2010. godine gradimo trščane krovove širom Srbije. Tradicionalni zanat, moderni standardi. AA+ bonitet - garancija pouzdanosti.</p>
+                
+                <div class="hero-buttons">
+                    <a href="tel:+381638373120" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Pozovite: 063/8373-120
+                    </a>
+                    <a href="#galerija" class="btn btn-secondary">
+                        <i class="fas fa-images"></i> Pogledajte radove
+                    </a>
+                </div>
+                
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <i class="fas fa-check-circle"></i>
+                        20+ godina iskustva
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Cela Srbija
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        AA+ bonitet
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="usluge">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="label">Usluge</span>
+                <h2>Šta radimo</h2>
+                <p>Specijalizovani smo isključivo za trščane krovove. To je sve što radimo - i radimo to najbolje.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Montaža novih krovova</h3>
+                    <p>Kompletna izrada trščanih krovova za vikendice, salaše, letnjikovce i ugostiteljske objekte. Radimo po celoj Srbiji.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Prepravka krovova</h3>
+                    <p>Obnova i popravka postojećih trščanih krovova. Vraćamo izvorni izgled i funkcionalnost vašeg krova.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Održavanje</h3>
+                    <p>Redovna kontrola i održavanje trščanih krovova. Produžavamo vek trajanja vašeg krova pravilnom negom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us" id="zasto-mi">
+        <div class="container">
+            <div class="why-content">
+                <div class="why-image fade-in">
+                    <img src="images/stock_thatched_02.jpg" alt="Trščani krov - SZR Trščar">
+                    <div class="experience-badge">
+                        <span class="number">20+</span>
+                        <span class="text">godina iskustva</span>
+                    </div>
+                </div>
+                
+                <div class="why-text fade-in">
+                    <span class="label">Zašto mi</span>
+                    <h2>Zašto izabrati SZR Trščar?</h2>
+                    <p>Nismo još jedan krovopokrivač. Mi radimo SAMO trščane krovove - i to radimo već dve decenije. Svaki projekat je za nas jedinstven.</p>
+                    
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <i class="fas fa-award"></i>
+                            <h3>AA+ Bonitet</h3>
+                            <p>Finansijski stabilna firma. Vaš projekat je u sigurnim rukama.</p>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Cela Srbija</h3>
+                            <p>Dolazimo na vašu adresu bilo gde u Srbiji.</p>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Prirodan materijal</h3>
+                            <p>Trska - izolator koji traje 40-60 godina bez hemikalija.</p>
+                        </div>
+                        <div class="why-item">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Direktan kontakt</h3>
+                            <p>Razgovarate direktno sa majstorom, bez posrednika.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="galerija">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="label">Galerija</span>
+                <h2>Naši radovi</h2>
+                <p>Pogledajte neke od projekata koje smo realizovali širom Srbije.</p>
+            </div>
+            
+            <div class="gallery-grid fade-in">
+                <div class="gallery-item">
+                    <img src="images/rad_04.jpg" alt="Trščani krov - projekat">
+                    <div class="gallery-overlay">
+                        <span>Vikendica - Vojvodina</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rad_01.jpg" alt="Trščani krov">
+                    <div class="gallery-overlay">
+                        <span>Letnjikovac</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rad_02.jpg" alt="Krov od trske">
+                    <div class="gallery-overlay">
+                        <span>Salaš</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rad_03.png" alt="Trščani krov detalj">
+                    <div class="gallery-overlay">
+                        <span>Detalj krova</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/stock_thatched_03.jpg" alt="Trščani krov kuća">
+                    <div class="gallery-overlay">
+                        <span>Tradicionalna kuća</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/stock_roof_01.jpg" alt="Krov">
+                    <div class="gallery-overlay">
+                        <span>Završni radovi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="utisci">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="label">Utisci</span>
+                <h2>Šta kažu naši klijenti</h2>
+            </div>
+            
+            <div class="testimonial-slider fade-in">
+                <div class="testimonial-card active">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="stars">★★★★★</div>
+                    <p>"Trsku sam doneo iz Belog Blata. Radilo se dve nedelje, četiri čoveka na krovu. Prezadovoljan sam - izolacija je fantastična, uštede na grejanju su izuzetne. Leti hlad, ne čuje se ni vetar ni kiša."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">T</div>
+                        <div class="author-info">
+                            <div class="name">Tomislav T.</div>
+                            <div class="location">Bačka Palanka</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="stars">★★★★★</div>
+                    <p>"Hteo sam autentičan izgled za vikendicu na Drini. Majstori su došli tačno kad su rekli, posao završen u dogovorenom roku. Krov izgleda fantastično - svi susedi dolaze da vide."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <div class="name">Radivoje M.</div>
+                            <div class="location">Bajina Bašta</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="stars">★★★★★</div>
+                    <p>"Za letnjikovac 4x4 sam tražio ponude od više firmi. Trščar je imao najbolji odnos cene i kvaliteta. Komunikacija odlična, sve po dogovoru. Preporučujem svima!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">Z</div>
+                        <div class="author-info">
+                            <div class="name">Zlatko P.</div>
+                            <div class="location">Bački Jarak</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="slider-dot active"></span>
+                    <span class="slider-dot"></span>
+                    <span class="slider-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Potreban vam trščani krov?</h2>
+            <p>Besplatna procena - pozovite i dogovorite termin. Dolazimo na vašu adresu bilo gde u Srbiji.</p>
+            <a href="tel:+381638373120" class="btn">
+                <i class="fas fa-phone"></i> Pozovite: 063/8373-120
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="o-nama">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="images/stock_thatched_01.jpg" alt="SZR Trščar - O nama">
+                    <div class="certified-badge">
+                        <i class="fas fa-certificate"></i>
+                        <span>AA+ Bonitet</span>
+                    </div>
+                </div>
+                
+                <div class="about-text fade-in">
+                    <span class="label">O nama</span>
+                    <h2>Porodična firma iz Temerina</h2>
+                    <p>SZR Trščar je porodična firma osnovana 2010. godine u Temerinu, Vojvodina. Ali zanat pokrivanja krovova trskom učili smo mnogo ranije - od starih majstora koji su ovo radili generacijama.</p>
+                    <p>Danas smo jedan od retkih specijalista za trščane krovove u Srbiji. Ne radimo fasade, ne radimo crepe - radimo SAMO trščane krovove. I zato ih radimo najbolje.</p>
+                    <p>Naš tim od 3 iskusna majstora pokriva projekte širom Srbije - od vikendica i letnjikovaca do salaša i ugostiteljskih objekata. Vlasnik Imre Daraž lično nadgleda svaki projekat.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">godina iskustva</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">projekata</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">majstora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="label">Kontakt</span>
+                <h2>Javite nam se</h2>
+                <p>Pošaljite upit ili nas pozovite direktno. Odgovaramo u roku od 24 sata.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper fade-in">
+                    <h3>Pošaljite upit</h3>
+                    <p class="subtitle">Popunite formu i javićemo vam se uskoro</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Vaše ime</label>
+                            <input type="text" id="name" name="name" placeholder="Unesite ime i prezime" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Unesite broj telefona" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Poruka</label>
+                            <textarea id="message" name="message" placeholder="Opišite ukratko šta vam treba..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Pošaljite upit
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-wrapper fade-in">
+                    <h3>Kontakt informacije</h3>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+381638373120">063/8373-120</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:nad.trska@gmail.com">nad.trska@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Adresa</h4>
+                                <p>Klapka Đerđa 21<br>21235 Temerin, Srbija</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Radno vreme</h4>
+                                <p>Pon - Sub: 08:00 - 18:00<br>Nedeljom po dogovoru</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.8936!2d19.8807!3d45.4007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDI0JzAyLjUiTiAxOcKwNTInNTAuNiJF!5e0!3m2!1sen!2srs!4v1600000000000!5m2!1sen!2srs" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <a href="#" class="logo" style="margin-bottom: 20px;">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="logo-text">SZR <span>Trščar</span></div>
+                    </a>
+                    <p>Trščani krovovi sa tradicijom. Od 2010. godine gradimo krovove koji traju generacijama. Pokrivamo celu Srbiju.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="viber://chat?number=%2B381638373120"><i class="fab fa-viber"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Brzi linkovi</h4>
+                    <ul>
+                        <li><a href="#pocetna"><i class="fas fa-chevron-right"></i> Početna</a></li>
+                        <li><a href="#usluge"><i class="fas fa-chevron-right"></i> Usluge</a></li>
+                        <li><a href="#galerija"><i class="fas fa-chevron-right"></i> Galerija</a></li>
+                        <li><a href="#o-nama"><i class="fas fa-chevron-right"></i> O nama</a></li>
+                        <li><a href="#kontakt"><i class="fas fa-chevron-right"></i> Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Usluge</h4>
+                    <ul>
+                        <li><a href="#usluge"><i class="fas fa-chevron-right"></i> Montaža krovova</a></li>
+                        <li><a href="#usluge"><i class="fas fa-chevron-right"></i> Prepravka</a></li>
+                        <li><a href="#usluge"><i class="fas fa-chevron-right"></i> Održavanje</a></li>
+                        <li><a href="#kontakt"><i class="fas fa-chevron-right"></i> Besplatna procena</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+381638373120">063/8373-120</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:nad.trska@gmail.com">nad.trska@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Klapka Đerđa 21, 21235 Temerin</p>
+                    <p><i class="fas fa-id-card"></i> PIB: 106788004</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2026</span> SZR Trščar. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <a href="viber://chat?number=%2B381638373120" class="viber-float" title="Pišite nam na Viber">
+        <i class="fab fa-viber"></i>
+    </a>
+    <a href="tel:+381638373120" class="call-float" title="Pozovite nas">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // ===== MOBILE MENU =====
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ===== HEADER SCROLL EFFECT =====
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.12)';
+                header.style.padding = '8px 0';
+            } else {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+                header.style.padding = '12px 0';
+            }
+        });
+
+        // ===== TESTIMONIAL SLIDER =====
+        let currentSlide = 0;
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.slider-dot');
+
+        function showSlide(index) {
+            testimonials.forEach((t, i) => {
+                t.classList.remove('active');
+                if (dots[i]) dots[i].classList.remove('active');
+            });
+            
+            if (testimonials[index]) {
+                testimonials[index].classList.add('active');
+                if (dots[index]) dots[index].classList.add('active');
+            }
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % testimonials.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance every 5 seconds
+        if (testimonials.length > 0) {
+            showSlide(0);
+            setInterval(nextSlide, 5000);
+        }
+
+        // Click on dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // ===== FORM HANDLING - VIBER REDIRECT =====
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = this.querySelector('input[name="name"]').value;
+                const phone = this.querySelector('input[name="phone"]').value;
+                const message = this.querySelector('textarea[name="message"]').value;
+                
+                // Create Viber message link
+                const viberNumber = '%2B381638373120';
+                const viberMessage = encodeURIComponent(
+                    `Poruka sa sajta:\n\nIme: ${name}\nTelefon: ${phone}\nPoruka: ${message}`
+                );
+                
+                // Open Viber with pre-filled message
+                window.open(`viber://chat?number=${viberNumber}&text=${viberMessage}`, '_blank');
+                
+                // Reset form
+                this.reset();
+                
+                // Show success message
+                alert('Hvala! Vaša poruka će biti poslata preko Viber-a.');
+            });
+        }
+
+        // ===== GALLERY LIGHTBOX =====
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                if (!img) return;
+                
+                const lightbox = document.createElement('div');
+                lightbox.className = 'lightbox';
+                lightbox.innerHTML = `
+                    <img src="${img.src}" alt="">
+                    <span class="lightbox-close">&times;</span>
+                `;
+                
+                document.body.appendChild(lightbox);
+                document.body.style.overflow = 'hidden';
+                
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                        document.body.removeChild(lightbox);
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+        });
+
+        // ===== SCROLL ANIMATIONS =====
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => fadeObserver.observe(el));
+
+        // ===== CURRENT YEAR IN FOOTER =====
+        const yearSpan = document.querySelector('.current-year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
